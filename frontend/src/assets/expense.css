@@ -1,0 +1,53 @@
+.table-hover tbody tr:hover {
+    background-color: #f8f9fa;
+    cursor: pointer;
+}
+
+.modal-content {
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.modal-header {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.modal-footer .btn-danger {
+    background-color: #dc3545;
+    border: none;
+}
+
+.modal-footer .btn-danger:hover {
+    background-color: #c82333;
+}
+
+.blur-background {
+    filter: blur(5px);
+    pointer-events: none; /* Prevent interaction with blurred content */
+    user-select: none; /* Prevent text selection on blurred content */
+    transition: filter 0.3s ease;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.modal-dialog {
+    animation: zoomIn 0.3s ease;
+}

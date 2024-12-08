@@ -7,6 +7,8 @@ import Home from './pages/Home'
 import NotFound from './pages/NotFound'
 import ProtectedRoute from './components/ProtectedRoute'
 import Index from './pages/Index'
+import Expense from './pages/Expense/Expense';
+import AddExpense from './pages/Expense/AddExpense';
 
 function Logout() {
   localStorage.clear()
@@ -27,6 +29,18 @@ function App() {
           <Route path="/dashboard" element={
             <ProtectedRoute>
               <Home />
+            </ProtectedRoute>
+          }
+          />
+          <Route path="/expense" element={
+            <ProtectedRoute>
+              <Expense />
+            </ProtectedRoute>
+          }
+          />
+          <Route path="/expense/add" element={
+            <ProtectedRoute>
+              <AddExpense />
             </ProtectedRoute>
           }
           />
