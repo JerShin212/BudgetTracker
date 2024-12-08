@@ -1,0 +1,38 @@
+# General
+.DS_Store
+Thumbs.db
+
+# Logs and temp files
+*.log
+*.tmp
+*.swp
+*.swo
+
+# IDE/Editor Files
+.vscode/
+.idea/
+.history/
+
+# Global Environment Files
+.env
+
+# Backend (Django)
+backend/__pycache__/*
+backend/*.pyc
+backend/*.pyo
+backend/venv/
+backend/env/
+backend/ENV/
+backend/db.sqlite3
+backend/staticfiles/
+backend/media/
+backend/settings_local.py
+
+# Frontend (React)
+frontend/node_modules/
+frontend/build/
+frontend/dist/
+frontend/.cache
+frontend/.env
+frontend/.eslintcache
+frontend/coverage/
