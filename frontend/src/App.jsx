@@ -9,6 +9,8 @@ import ProtectedRoute from './components/ProtectedRoute'
 import Index from './pages/Index'
 import Expense from './pages/Expense/Expense';
 import AddExpense from './pages/Expense/AddExpense';
+import EditExpense from './pages/Expense/EditExpense';
+import ManageCategories from './pages/Category/ManageCategories';
 
 function Logout() {
   localStorage.clear()
@@ -41,6 +43,18 @@ function App() {
           <Route path="/expense/add" element={
             <ProtectedRoute>
               <AddExpense />
+            </ProtectedRoute>
+          }
+          />
+          <Route path="/expense/edit/:id" element={
+            <ProtectedRoute>
+              <EditExpense />
+            </ProtectedRoute>
+          }
+          />
+          <Route path="/manage-categories" element={
+            <ProtectedRoute>
+              <ManageCategories />
             </ProtectedRoute>
           }
           />

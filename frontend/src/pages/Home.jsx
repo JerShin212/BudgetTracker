@@ -97,7 +97,7 @@ function Home() {
                             <div className="d-flex flex-wrap justify-content-center gap-4">
                                 <div
                                     className="action-card text-center p-3"
-                                    onClick={() => navigate('/expense')}
+                                    onClick={() => navigate('/expense/add')}
                                     style={{ cursor: 'pointer' }}
                                 >
                                     <i className="bi bi-plus-circle display-6"></i>
