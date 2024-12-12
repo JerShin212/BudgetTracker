@@ -11,6 +11,10 @@ import Expense from './pages/Expense/Expense';
 import AddExpense from './pages/Expense/AddExpense';
 import EditExpense from './pages/Expense/EditExpense';
 import ManageCategories from './pages/Category/ManageCategories';
+import Reports from './pages/Reports';
+import Insights from './pages/Insights';
+import Settings from './pages/Settings';
+import Help from './pages/Help';
 
 function Logout() {
   localStorage.clear()
@@ -55,6 +59,30 @@ function App() {
           <Route path="/manage-categories" element={
             <ProtectedRoute>
               <ManageCategories />
+            </ProtectedRoute>
+          }
+          />
+          <Route path="/reports" element={
+            <ProtectedRoute>
+              <Reports />
+            </ProtectedRoute>
+          }
+          />
+          <Route path="/insights" element={
+            <ProtectedRoute>
+              <Insights />
+            </ProtectedRoute>
+          }
+          />
+          <Route path="/settings" element={
+            <ProtectedRoute>
+              <Settings />
+            </ProtectedRoute>
+          }
+          />
+          <Route path="/help" element={
+            <ProtectedRoute>
+              <Help />
             </ProtectedRoute>
           }
           />
