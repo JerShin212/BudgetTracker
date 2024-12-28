@@ -15,6 +15,7 @@ import Reports from './pages/Reports';
 import Insights from './pages/Insights';
 import Settings from './pages/Settings';
 import Help from './pages/Help';
+import Profile from './pages/Profile';
 
 function Logout() {
   localStorage.clear()
@@ -83,6 +84,12 @@ function App() {
           <Route path="/help" element={
             <ProtectedRoute>
               <Help />
+            </ProtectedRoute>
+          }
+          />
+          <Route path="/profile" element={
+            <ProtectedRoute>
+              <Profile />
             </ProtectedRoute>
           }
           />
